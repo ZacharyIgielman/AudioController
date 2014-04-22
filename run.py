@@ -12,8 +12,8 @@ class Main(object):
     self.slider=Scale(self.root, from_=0, to=99, orient=HORIZONTAL, command=self.slide, length=198, background="#88ffff")
     self.slider.pack()
   def hdmiButtonCall():
-    os.system("sudo amixer cset numid=3 2")
+    os.system("amixer cset numid=3 2")
   def headphoneButtonCall():
-    os.system("sudo amixer cset numid=3 1")
+    os.system("amixer cset numid=3 1")
   def slide(self, x):
-    os.system("sudo amixer cset numid=3 " + str(x) + “%”)
+    os.system("amixer cset numid=3 " + str(x) + “%”)
