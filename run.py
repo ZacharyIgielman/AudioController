@@ -16,4 +16,4 @@ class Main(object):
   def headphoneButtonCall():
     os.system("amixer cset numid=3 1")
   def slide(self, x):
-    os.system("amixer cset numid=3 " + str(x) + “%”)
+    os.system("amixer cset numid=1 " + str(x) + “%”)
